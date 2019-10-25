@@ -1,0 +1,8 @@
+
+<ul>
+  <% @users.each do |users| %>
+    <li>name: <%= users.name %>
+      <%= link_to 'select', select_users_path(users.id) %>
+    </li>
+  <% end %>
+</ul>
