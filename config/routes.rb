@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get '/signup' => 'users#new'
   # post '/signup' => 'users#new'
   post '/users' => 'users#create'
+  get '/weather' => 'weather#search'
+  get '/weather/search' => 'weather#city'
   get '/weather/:city' => 'weather#city'
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

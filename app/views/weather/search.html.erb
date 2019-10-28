@@ -1,0 +1,6 @@
+
+<%= form_with(url: "/weather/search", method: "get", local: true) do %>
+  <%= label_tag(:city, "Search for:") %>
+  <%= text_field_tag(:city) %>
+  <%= submit_tag("Search") %>
+<% end %>

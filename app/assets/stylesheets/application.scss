@@ -11,6 +11,12 @@
  * It is generally better to create a new file per style scope.
  *
 */
-
 //@import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  background-image: url('/assets/signup.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

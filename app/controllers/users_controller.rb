@@ -7,8 +7,14 @@ class UsersController < ApplicationController
   end
 
   def select
-    @users = User.find(params[:id])
+    @user = User.find(params[:id])
 
+  end
+
+  def select_user_info
+    user = User.find(params[:id])
+    infos = user.infos
+    render json: infos
   end
 
   def create
