@@ -13,7 +13,6 @@
 */
 //@import "bootstrap-sprockets";
 @import "bootstrap";
-
 //body {
 //  background-image: url('/assets/signup.jpeg');
 //  background-repeat: no-repeat;
@@ -22,7 +21,7 @@
 //}
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
-html,body{
+html, body {
   background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,79 +29,78 @@ html,body{
   font-family: 'Numans', sans-serif;
 }
 
-.container{
+.container {
   height: 100%;
   align-content: center;
   color: white;
 }
 
-.card{
+.card {
   height: 370px;
   margin-top: auto;
   margin-bottom: auto;
   width: 400px;
-  background-color: rgba(0,0,0,0.5) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.social_icon span{
+.social_icon span {
   font-size: 60px;
   margin-left: 10px;
   color: #FFC312;
 }
 
-.social_icon span:hover{
+.social_icon span:hover {
   color: white;
   cursor: pointer;
 }
 
-.card-header h3{
+.card-header h3 {
   color: white;
 }
 
-.social_icon{
+.social_icon {
   position: absolute;
   right: 20px;
   top: -45px;
 }
 
-.input-group-prepend span{
+.input-group-prepend span {
   width: 50px;
   background-color: #FFC312;
   color: white;
-  border:0 !important;
+  border: 0 !important;
 }
 
 
-input:focus{
-  outline: 0 0 0 0  !important;
+input:focus {
+  outline: 0 0 0 0 !important;
   box-shadow: 0 0 0 0 !important;
 
 }
 
-.remember{
+.remember {
   color: white;
 }
 
-.remember input
-{
+.remember input {
   width: 20px;
   height: 20px;
   margin-left: 15px;
   margin-right: 5px;
 }
 
-.login_btn{
+.login_btn {
   color: black;
   background-color: #FFC312;
   width: 100px;
 }
 
-.login_btn:hover{
+.login_btn:hover {
   color: black;
   background-color: white;
 }
 
-.links{
+.links {
   color: white;
 }
 
@@ -110,7 +108,7 @@ input:focus{
   color: white;
 }
 
-.links a{
+.links a {
   margin-left: 4px;
 }
 
@@ -118,8 +116,8 @@ input:focus{
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   perspective: 1000px;
-  margin-top:50px;
-  margin-left:30%;
+  margin-top: 50px;
+  margin-left: 30%;
 }
 
 .login {
@@ -143,30 +141,36 @@ input:focus{
 }
 
 .login .form-group {
-  margin-bottom:17px;
+  margin-bottom: 17px;
 }
+
 .login .form-control,
 .login .btn {
-  border-radius:0;
+  border-radius: 0;
 }
+
 .login .btn {
-  text-transform:uppercase;
-  letter-spacing:3px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
+
 .input-group-addon {
-  border-radius:0;
-  color:#fff;
-  background:#f3aa0c;
-  border:#f3aa0c;
+  border-radius: 0;
+  color: #fff;
+  background: #f3aa0c;
+  border: #f3aa0c;
 }
+
 .forgot {
-  font-size:16px;
+  font-size: 16px;
 }
+
 .forgot a {
-  color:#333;
+  color: #333;
 }
+
 .forgot a:hover {
-  color:#5cb85c;
+  color: #5cb85c;
 }
 
 #inner-wrapper, #contact-us .contact-form, #contact-us .our-address {
@@ -179,6 +183,7 @@ input:focus{
   box-shadow: white;
   margin-bottom: 100px;
 }
+
 .input-group-addon {
   border-radius: 0;
   border-top-right-radius: 0px;
@@ -190,6 +195,8 @@ input:focus{
   border-right-style: none;
   border-right-width: medium;
 }
+
 #all users {
   padding-right: 25px;
 }
+

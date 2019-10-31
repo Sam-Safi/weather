@@ -9,12 +9,10 @@ class WeatherController < ApplicationController
     @temp = body['main']['temp']
     @name = body['name']
     user = User.find(session[:user_id])
-    user.cities.create(name: @name, city: "")
+    user.cities.create(name: @name, city: '')
   end
 
-  def search
-
-  end
+  def search; end
 
 
 end

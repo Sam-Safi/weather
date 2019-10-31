@@ -1,6 +1,6 @@
-
 class UsersController < ApplicationController
-  def new; end
+  def new;
+  end
 
   def all
     @users = User.all
@@ -11,10 +11,10 @@ class UsersController < ApplicationController
 
   end
 
-  def select_user_info
+  def select_user_cities
     user = User.find(params[:id])
-    infos = user.infos
-    render json: infos
+    cities = user.cities
+    render json: cities
   end
 
   def create
