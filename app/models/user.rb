@@ -1,5 +1,6 @@
 class User < ApplicationRecord
 
   has_secure_password
-  has_and_belongs_to_many :cities
+  has_many :cities
+  has_many :fav_cities
 end

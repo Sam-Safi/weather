@@ -1,1 +1,8 @@
-<h1>Pages#welcome</h1>
+<h1>Welcome to the page</h1>
+<p>Hi <%= @current_user.name %> find your city</p>
+
+<%= form_with(url: "/weather/search", method: "get", local: true) do %>
+  <%= label_tag(:city, "Search for:") %>
+  <%= text_field_tag(:city) %>
+  <%= submit_tag("Search") %>
+<% end %>
