@@ -1,8 +1,9 @@
 class WeatherController < ApplicationController
   def city
 
-    url = "https://api.openweathermap.org/data/2.5/weather?appid=f46cb82bb879ec7201591b87896c4429&q=#{params[:city]}&units=metric"
+    url = "https://api.openweathermap.org/data/2.5/weather?appid=#{ENV['MYAPIKEY']}&q=#{params[:city]}&units=metric"
 
+    # url = "http://weather/api/api=#{ENV['MYAPIKEY']}"
     response = HTTParty.get url
     body = JSON.parse(response.body)
 

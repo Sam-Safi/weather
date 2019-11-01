@@ -27,7 +27,6 @@ class UsersController < ApplicationController
     end
   end
 
-
   def favouritecity
 
     user = User.find(session[:user_id])

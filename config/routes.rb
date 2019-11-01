@@ -13,6 +13,5 @@ Rails.application.routes.draw do
   get '/weather/search' => 'weather#city'
   get '/weather/:city' => 'weather#city'
   post '/weather/favourite-city' => 'users#favouritecity'
-
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
