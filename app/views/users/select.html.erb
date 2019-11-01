@@ -5,6 +5,17 @@ Name: <%= @user.name %>
 <br>
 Email: <%= @user.email %>
 <br>
-City: <%= @name %>
+City:
+  <ul>
+    <% @user.cities.each do |city| %>
+      <li> <%= city.name %></li>
+    <% end %>
+  </ul>
 
+  Your Fav Cities:
+  <ul>
+    <% @user.fav_cities.each do |name| %>
+      <li> <%= name.city_name %></li>
+    <% end %>
+  </ul>
 </div>

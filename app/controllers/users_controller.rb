@@ -27,6 +27,15 @@ class UsersController < ApplicationController
     end
   end
 
+
+  def favouritecity
+
+    user = User.find(session[:user_id])
+    user.fav_cities.create(city_name: params[:name])
+
+    redirect_to '/'
+  end
+
   private
 
   def user_params
