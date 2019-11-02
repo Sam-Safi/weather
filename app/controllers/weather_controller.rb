@@ -3,7 +3,6 @@ class WeatherController < ApplicationController
 
     url = "https://api.openweathermap.org/data/2.5/weather?appid=#{ENV['APIKEY']}&q=#{params[:city]}&units=metric"
 
-    # url = "http://weather/api/api=#{ENV['MYAPIKEY']}"
     response = HTTParty.get url
     body = JSON.parse(response.body)
 
@@ -13,7 +12,8 @@ class WeatherController < ApplicationController
     user.cities.create(name: @name, city: '')
   end
 
-  def search; end
+  def search;
+  end
 
 
 end

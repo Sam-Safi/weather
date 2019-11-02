@@ -1,11 +1,11 @@
-<h1 class="test">User details</h1>
+<h1 class="select">User details</h1>
 
-<div class="test">
-Name: <%= @user.name %>
-<br>
-Email: <%= @user.email %>
-<br>
-City:
+<div class="select">
+  Name: <%= @user.name %>
+  <br>
+  Email: <%= @user.email %>
+  <br>
+  City:
   <ul>
     <% @user.cities.each do |city| %>
       <li> <%= city.name %></li>
