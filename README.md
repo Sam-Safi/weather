@@ -1,50 +1,57 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+PROJECT #2 - simple weather app
 
-Things you may want to cover:
+By Sam Safikhani
 
-* Ruby version
+#**Welcome to Rails**
+__________________________________________________________________________________
+* WeatherApp is a small practice project with the purpose of practicing Ruby and Rails concepts with a trainee.
 
-* System dependencies
+* Application uses the following technology and platforms 
 
-* Configuration
+* Ruby '2.6.4'
+* bootstrap '4.3.1'
+* Account Creation
+* Login
+* Forecast
+* Favourite Location
+* Users List
 
-* Database creation
+#**Getting Started**
+* Application is build with Ruby and uses the OpenWeatherMapAPI Service to create a weather forecast 
 
-* Database initialization
 
-* How to run the test suite
+#**setup environment**
 
-* Services (job queues, cache servers, search engines, etc.)
+* You'll need to export an environment variable with the key name API_KEY
+Once you've created your key and saved the variable in your bash_profile or current session run the npm script environment-variables to populate the key value to the project's environment files.
 
-* Deployment instructions
+#**environment keys**
 
-* ...
+* WEATHER_KEY : your api key
 
-* Setup
-*  We can create a new Rails project in this case our database is PostgreSQL.
+#**requirements**
+* Gems
+* bundle install
+
+#**Covering**
+
+User can create the account amd log in to the page and search the location to get city forecast.
+And also user can save city location as a favourite city to the list.
+In User list we have all information about user. All info about user set in our migration tables in our database.
+
+#**Missing part**
+
+* Couldn't get work in Heroku I'll work on it.
+
+   Feedback and suggestion are welcome !
+
+
+
+
   
-  Create a project called weatherapp with the following command:
-  
-  **rails new weather --database=postgresql**
-  
-* To start the API server, run rails s, then access endpoints as described below. Default port on localhost is 3000
 
-*Now lest build our project
-* Step 1
-* Authentication with Bcrypt
-* Create a user model with a name, email and password_digest (all strings) by entering the following command into the command line: rails **generate model user name email password_digest**.
-* Run in your terminal  $ rails db:create
-* Run rake db:migrate in the command line to migrate the database.
-* Add these routes below to your routes.rb file.
 
-** # config/routes.rb
-   
-   GifVault::Application.routes.draw do
-       
-       get '/signup' => 'users#new'
-       post '/users' => 'users#create'
-   
-   end
+  
+  
