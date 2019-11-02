@@ -12,14 +12,12 @@ ________________________________________________________________________________
 
 * Ruby '2.6.4'
 * bootstrap '4.3.1'
+* OpenWeatherMapAPI
 * Account Creation
 * Login
 * Forecast
 * Favourite Location
 * Users List
-
-#**Getting Started**
-* Application is build with Ruby and uses the OpenWeatherMapAPI Service to create a weather forecast 
 
 
 #**setup environment**
